@@ -1,0 +1,35 @@
+.header .info{text-transform:capitalize}.header .info .cont{z-index:2;position:relative}.header .info .cont h1{font-weight:700;color:#272727;text-transform:uppercase;margin-bottom:7px}.header .info .cont>span{font-size:17px;margin-bottom:25px;display:inline-block;letter-spacing:1px}.header .info .cont .title{font-size:20px}.header .info .cont .title li{color:#272727;font-weight:600;margin-bottom:5px}.header .info .inform {}.header .info .inform .answer{}.header .info .social i{color:#66737f;background-color:#232323;margin-right:5px;opacity:0.7;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out}.header .info .social i:hover{opacity:1}
+
+
+.header h1 {text-transform:capitalize}
+
+
+
+
+
+<div class="info ml-1">
+              <div class="cont">
+                <h1>ahmed samir</h1><span>Front-end web developer</span>
+                   
+                <div class="inform">
+                    <div class="age">
+                        <span>age:</span>
+                        <span class="answer">24</span>
+                    </div>
+                    <div class="phone">
+                        <span>age:</span>
+                        <span class="answer">01019323315</span>
+                    </div>
+                    <div class="email">
+                        <span>age:</span>
+                        <span class="answer">ahmedsamirweb42@gmail.com</span>
+                    </div>
+                    <div class="adress">
+                        <span>age:</span>
+                        <span class="answer">zahraa el maadi, cairo, egypt</span>
+                    </div>
+                </div>
+                <div class="social mt-2"><i class="fa fa-facebook fa-fw" href=""></i><i class="fa fa-github fa-fw" href=""></i><i class="fa fa-linkedin fa-fw" href=""></i><i class="fa fa-codepen fa-fw" href=""></i></div>
+                </div>
+              </div>
+            </div>
