@@ -1,9 +1,13 @@
+$(".container").mixItUp();
+
+
 // trigger nice scroll
   
 let minLarge = window.matchMedia("(min-width: 992px)");
 
-if (minLarge.matches) {
-    $(window).on("load", function() {
+$(function(){
+    
+    if (minLarge.matches) {
 
         setTimeout(function () {
             $("html, body").niceScroll({
@@ -20,9 +24,7 @@ if (minLarge.matches) {
 
             });
         }, 500);
-    }); 
-}
+    }
+});
 
 //trigger mixer
-
-$(".container").mixItUp();
