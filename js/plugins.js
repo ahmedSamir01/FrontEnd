@@ -1,2 +1,0 @@
-//trigger mixer
-$(".container").mixItUp();

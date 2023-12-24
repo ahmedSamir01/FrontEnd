@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins";
+  font-family: "Poppins" !important;
   overflow: hidden;
 }
 .overlay {
@@ -71,7 +71,7 @@ ul {
 }
 .p-style {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16.5px;
   line-height: 1.8;
   color: #777777;
 }
@@ -170,7 +170,7 @@ nav ul li a:after {
 }
 @media (min-width: 768px) {
   nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: #fff !important;
   }
 }
@@ -270,7 +270,7 @@ nav ul li.active a:after {
   letter-spacing: 1px;
 }
 .header .info .cont .title {
-  font-size: 20px;
+  font-size: 19px;
 }
 .header .info .cont .title li {
   color: #272727;
@@ -279,10 +279,10 @@ nav ul li.active a:after {
 }
 .header .info .cont .answer {
   margin-top: 4px;
-  margin-left: -35px;
+  margin-left: -25px;
 }
 .header .info .cont .answer li {
-  font-size: 16px;
+  font-size: 14.8px;
   margin-bottom: 11px;
   letter-spacing: 1px;
   color: #fff;
@@ -414,10 +414,12 @@ nav ul li.active a:after {
 }
 .portfolio .site .card {
   border: 1px solid rgba(0, 0, 0, 0.16) !important;
+  cursor: pointer;
 }
 .portfolio .site .card .pic {
   overflow: hidden;
   position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 .portfolio .site .card .pic .overlay {
   background-color: #dcdcdc;
@@ -455,7 +457,9 @@ nav ul li.active a:after {
   width: 100%;
 }
 .portfolio .site .card .card-body {
-  min-height: 228px;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
 }
 .portfolio .site .card .card-title {
   font-size: 18px;
@@ -472,31 +476,34 @@ nav ul li.active a:after {
   font-size: 15px;
   line-height: 1.7;
 }
-.portfolio .site .card .upper {
+.techs {
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: auto;
 }
-.portfolio .site .card .upper span {
+.techs span {
   float: left;
   padding: 6px 8px;
   -webkit-box-shadow: 1px 2px 3px -1px #999;
   box-shadow: 1px 2px 3px -1px #999;
   border: 1px solid #eaeaea;
-  color: #525252;
+  color: #262626;
+  font-weight: 400;
   margin-bottom: 7px;
+  border: 1px solid #99999973;
 }
-.portfolio .site .card .upper span:not(:last-of-type) {
+.techs span:not(:last-of-type) {
   margin-right: 5px;
 }
-.portfolio .site .card .upper a {
+.techs a {
   float: right;
   border-radius: 25px;
   border: 1px solid #5885b5;
   color: #5885b5;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  font-size: 15px;
 }
-.portfolio .site .card .upper a:hover {
+.techs a:hover {
   color: #fff;
   background-color: #5885b5;
 }
@@ -610,4 +617,58 @@ nav ul li.active a:after {
 }
 ::placeholder {
   color: #fff !important;
+}
+.modal.show {
+  display: flex !important;
+  z-index: 9999;
+  padding: 0 !important;
+}
+.modal.show .modal-dialog {
+  margin: auto;
+  width: 85%;
+}
+.modal.show .modal-body {
+  padding: 1.5rem;
+  overflow: auto;
+  max-height: 30rem;
+}
+@media (max-width: 575px) {
+  .modal.show .modal-body {
+    max-height: 20rem;
+  }
+}
+.modal.show .modal-image img {
+  height: 20rem;
+}
+.modal.show .description h5,
+.modal.show .highlights h5 {
+  color: #404040;
+  font-size: 1.15rem;
+}
+.modal.show .description p,
+.modal.show .highlights p {
+  color: #777777;
+  font-size: 0.95rem;
+  line-height: 25px;
+}
+@media (max-width: 767.98px) {
+  .modal .techs span {
+    font-size: 0.7rem;
+  }
+  .modal-title {
+    font-size: 1.15rem;
+  }
+  .modal.show .description h5,
+  .modal.show .highlights h5 {
+    font-size: 1rem;
+  }
+  .modal.show .description p,
+  .modal.show .highlights p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 576px) {
+  .modal.show .modal-dialog {
+    max-width: 650px;
+  }
 }
