@@ -73,7 +73,7 @@ ul {
   font-weight: 400;
   font-size: 16.5px;
   line-height: 1.8;
-  color: #777777;
+  color: #858585;
 }
 .button {
   text-transform: capitalize;
@@ -464,7 +464,7 @@ nav ul li.active a:after {
 .portfolio .site .card .card-title {
   font-size: 18px;
   font-weight: 500;
-  color: #505050;
+  color: #565656;
   text-transform: capitalize;
 }
 .portfolio .site .card .card-text {
@@ -642,12 +642,12 @@ nav ul li.active a:after {
 }
 .modal.show .description h5,
 .modal.show .highlights h5 {
-  color: #404040;
+  color: #504f4f;
   font-size: 1.15rem;
 }
 .modal.show .description p,
 .modal.show .highlights p {
-  color: #777777;
+  color: #808080;
   font-size: 0.95rem;
   line-height: 25px;
 }
