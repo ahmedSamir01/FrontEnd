@@ -68,7 +68,7 @@ const PROJECTS = {
       "Plato-campus is a powerful tool to support training professional to create imaginative and compelling courses that students enjoying working and learning with.",
     responsibilities:
       "Instrumental in developing a web app for Plato Campus, a learning management system. Used React and Redux to create a fast, user-friendly interface. Collaborated with a Laravel back end to implement features like course creation, video streaming, quizzes, feedback, and certificates, enhancing the online learning experience.",
-    image: "img/projects/Plato.jpg",
+    image: "img/projects/plato.jpg",
     year: "y21",
     Technical_Stack: ["React", "SASS", "Prime", "BT", "Laravel"],
   },
