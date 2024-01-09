@@ -432,17 +432,17 @@ nav ul li.active a:after {
   margin-top: 30px;
 }
 .portfolio .site .card {
-  border: 1px solid rgba(0, 0, 0, 0.16) !important;
+  border: 1px solid rgba(0, 0, 0, 0.17) !important;
   cursor: pointer;
 }
 .portfolio .site .card .pic {
   overflow: hidden;
   position: relative;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
 }
 .portfolio .site .card .pic .overlay {
   background-color: #dcdcdc;
-  opacity: 0.2;
+  opacity: 0.12;
   -webkit-transition: opacity 0.5s linear;
   transition: opacity 0.5s linear;
   z-index: 3;
@@ -506,7 +506,7 @@ nav ul li.active a:after {
   -webkit-box-shadow: 1px 2px 3px -1px #999;
   box-shadow: 1px 2px 3px -1px #999;
   border: 1px solid #eaeaea;
-  color: #717171;
+  color: #6c6c6c;
   font-weight: 600;
   margin-bottom: 7px;
   border: 1px solid #99999973;
@@ -515,7 +515,8 @@ nav ul li.active a:after {
 .techs span:not(:last-of-type) {
   margin-right: 5px;
 }
-.techs a {
+.techs a,
+.techs a:focus {
   float: right;
   border-radius: 25px;
   border: 1px solid #5885b5;
@@ -523,6 +524,7 @@ nav ul li.active a:after {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-size: 15px;
+  box-shadow: none;
 }
 @media (max-width: 767.98px) {
   .techs a {
@@ -670,6 +672,9 @@ nav ul li.active a:after {
   .modal.show .modal-body {
     max-height: 18rem;
   }
+}
+.modal.show .modal-image {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.17);
 }
 .modal.show .modal-image img {
   height: 18rem;

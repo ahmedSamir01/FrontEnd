@@ -38,7 +38,7 @@ const PROJECTS = {
     description:
       "The Africa Prosecutors Association, Is A Regional Organization Composed Of 35 African Prosecution Authorities, And Was Established In 2004. The Main Purpose Of The Association Is To Create A Regional Forum To Facilitate Judicial Cooperation Between African Public Prosecutors And To Confront Transnational Organized Crime And Its Serious Risks Against The Security And Safety Of African Countries.",
     responsibilities:
-      "Key contributor to the extensive web app development for APA. Used React and Redux to create a fast, user-friendly interface. Collaborated with a Laravel back end to Implement features like news, events, resources, and chat, greatly enhancing the APA platform.",
+      "Key contributor to the extensive web app development for APA. Used React and Context API to create a fast, user-friendly interface. Collaborated with a Laravel back end to Implement features like news, events, resources, and chat, greatly enhancing the APA platform.",
     image: "img/projects/apa.jpg",
     year: "y22",
     Technical_Stack: ["React", "SASS", "Prime", "BT", "Laravel"],
@@ -77,7 +77,8 @@ const PROJECTS = {
     description:
       "Scorecards is a powerful application designed to revolutionize your feedback experience with organizations. This app empowers users to rate and provide valuable feedback on the service quality they receive. Enhance transparency and accountability as you contribute to a community-driven assessment of organizational performance. With Scorecards, your opinions shape a collective voice, fostering improvement and excellence in the services provided by Plan International Agency.",
     image: "img/projects/Plan.jpg",
-    responsibilities: "",
+    responsibilities:
+      "Collaborated with a team of developers to design and implement a user-friendly feedback system using React and Context API. Contributed to the development of a Laravel back end to support features like user authentication, reporting, and service provision. Worked closely with the team to ensure that the application was scalable, reliable, and secure.",
     year: "y22",
     Technical_Stack: ["React", "SASS", "BT", "Laravel"],
   },
@@ -206,7 +207,7 @@ $(function () {
                         <div class="techs">
                         ${
                           projectData.demo
-                            ? `<a class="btn btn-light" href="https://ahmedsamir01.github.io/${projectData.demo}" target="_blank">open</a>`
+                            ? `<a class="btn btn-ligh open-link" href="https://ahmedsamir01.github.io/${projectData.demo}" target="_blank">open</a>`
                             : ""
                         }
                         ${projectData.Technical_Stack.map(
@@ -224,8 +225,16 @@ $(function () {
   // Initialize MixItUp
   $(".container").mixItUp();
 
-  // Click event for dynamically created cards
+  // Stop Propagation when clicking on open link
+  $(".card .open-link").click(function (e) {
+    e.stopPropagation();
+  });
+
+  // Open modal functionality
   $(document).on("click", ".card", function () {
+    $("body").css("overflow", "hidden");
+    $(".modal-image img").attr("src", "img/projects/placeholder.jpg");
+
     // Get the project name from the data-project attribute
     var projectName = $(this).data("project");
     var dataForCard = PROJECTS[projectName];
@@ -240,7 +249,7 @@ $(function () {
 
     // Check if responsibilities exist before adding the header
     if (dataForCard.responsibilities) {
-      $(".highlights-header").text("Key Contributions");
+      $(".highlights-header").text("Contributions");
       $("#projectResponsibilities").text(dataForCard.responsibilities);
     } else {
       // Clear the responsibilities header and content if it doesn't exist
@@ -261,6 +270,11 @@ $(function () {
 
     // Show the modal
     $("#myModal").modal("show");
+  });
+
+  // Close modal functionality
+  $(".modal").on("hidden.bs.modal", function () {
+    $("body").css("overflow", "auto");
   });
 
   window.matchMedia("(max-width: 767px)");
@@ -317,14 +331,6 @@ $(function () {
 });
 
 $(window).on("load", function () {
-  $(".loading span").fadeOut(100, function () {
-    $(this)
-      .parent()
-      .fadeOut(1000, function () {
-        $(this).remove();
-        $("body").css("overflow", "auto");
-      });
-  });
   $(".answer .age").text(CURRENT_YEAR - YEAR_OF_BIRTH);
   $(".experience-years").text(`+${CURRENT_YEAR - START_YEAR}`);
   $(".view-more").on("click", function () {
@@ -345,5 +351,13 @@ $(window).on("load", function () {
     ) {
       $(".navbar-toggler").click();
     }
+  });
+  $(".loading span").fadeOut(100, function () {
+    $(this)
+      .parent()
+      .fadeOut(1000, function () {
+        $(this).remove();
+        $("body").css("overflow", "auto");
+      });
   });
 });
