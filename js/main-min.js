@@ -258,13 +258,13 @@ $(function () {
     }
 
     var technologiesHtml = dataForCard.Technical_Stack.map(
-      (tech) => `<span class="badge">${tech}</span>`
+      (tech) => `<span class="badge mt-1">${tech}</span>`
     );
     $(".modal-body .techs").append(technologiesHtml);
 
     // Add link to demo if it exists
     if (dataForCard.demo) {
-      var demoLink = `<a class="btn btn-light" href="https://ahmedsamir01.github.io/${dataForCard.demo}" target="_blank">Open</a>`;
+      var demoLink = `<a class="btn btn-light mx-2 mt-1" href="https://ahmedsamir01.github.io/${dataForCard.demo}" target="_blank">Open</a>`;
       $(".modal-body .techs").append(demoLink);
     }
 

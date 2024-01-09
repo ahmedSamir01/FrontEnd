@@ -98,6 +98,7 @@ ul {
   display: inline-block;
   padding: 30px;
   font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 nav.sticky-nav {
   background: #fff;
@@ -310,9 +311,7 @@ nav ul li.active a:after {
   .header .info .cont .title {
     font-size: 17px;
   }
-  .header .info .cont .answer {
-    margin-left: -40px;
-  }
+
   .header .info .cont .answer li {
     font-size: 13.5px;
     line-height: 1.25;
@@ -320,14 +319,10 @@ nav ul li.active a:after {
     letter-spacing: 0;
   }
 }
-@media (max-width: 575.98px) {
-  .header .info .cont .answer {
-    margin-left: -30px;
-  }
-}
+
 @media (max-width: 437px) {
   .header .info .cont .answer {
-    margin-left: 0;
+    margin-left: -5px;
   }
 }
 
@@ -668,7 +663,7 @@ nav ul li.active a:after {
 }
 .modal.show .modal-dialog {
   margin: auto;
-  width: 85%;
+  width: 90%;
 }
 .modal.show .modal-body {
   padding: 1.5rem;
