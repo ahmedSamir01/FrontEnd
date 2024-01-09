@@ -305,17 +305,14 @@ nav ul li.active a:after {
   letter-spacing: 1px;
   color: #fff;
 }
-@media (max-width: 437px) {
-  .header .info .cont .answer {
-    margin-left: 0;
-  }
-}
+
 @media (max-width: 767.98px) {
   .header .info .cont .title {
     font-size: 17px;
   }
-}
-@media (max-width: 767.98px) {
+  .header .info .cont .answer {
+    margin-left: -40px;
+  }
   .header .info .cont .answer li {
     font-size: 13.5px;
     line-height: 1.25;
@@ -323,6 +320,17 @@ nav ul li.active a:after {
     letter-spacing: 0;
   }
 }
+@media (max-width: 575.98px) {
+  .header .info .cont .answer {
+    margin-left: -30px;
+  }
+}
+@media (max-width: 437px) {
+  .header .info .cont .answer {
+    margin-left: 0;
+  }
+}
+
 .header .info .social i {
   color: #bec5cc;
   background-color: #272727;
@@ -345,6 +353,7 @@ nav ul li.active a:after {
 @media (min-width: 992px) {
   .profile p {
     width: 80%;
+    color: #8e8e8e !important;
   }
 }
 .profile button {
@@ -391,8 +400,6 @@ nav ul li.active a:after {
   .portfolio {
     padding: 40px 0 50px;
   }
-}
-@media (max-width: 991.98px) {
   .portfolio .row {
     margin-bottom: 20px;
   }
