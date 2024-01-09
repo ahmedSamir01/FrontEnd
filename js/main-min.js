@@ -264,7 +264,7 @@ $(function () {
 
     // Add link to demo if it exists
     if (dataForCard.demo) {
-      var demoLink = `<a class="btn btn-light mx-2 mt-1" href="https://ahmedsamir01.github.io/${dataForCard.demo}" target="_blank">Open</a>`;
+      var demoLink = `<a class="btn btn-light ms-2 mt-1" href="https://ahmedsamir01.github.io/${dataForCard.demo}" target="_blank">Open</a>`;
       $(".modal-body .techs").append(demoLink);
     }
 
