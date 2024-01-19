@@ -68,7 +68,7 @@ ul {
   font-weight: 400;
   font-size: 16.5px;
   line-height: 1.8;
-  color: #858585;
+  color: #868686;
 }
 @media (max-width: 767.98px) {
   .h-style {
@@ -348,7 +348,7 @@ nav ul li.active a:after {
 @media (min-width: 992px) {
   .profile p {
     width: 80%;
-    color: #8e8e8e !important;
+    color: #868686 !important;
   }
 }
 .profile button {
