@@ -82,6 +82,17 @@ const PROJECTS = {
     year: "y22",
     Technical_Stack: ["React", "SASS", "BT", "Laravel"],
   },
+  Chat: {
+    name: "Chat",
+    description:
+      "A Real-Time Chat Application that facilitates dynamic group communication. With customizable chat rooms, instant messaging, and a user-friendly interface, this application ensures seamless interactions among multiple users. Emphasizing quick response times and security.",
+    image: "img/projects/Chat.jpg",
+    responsibilities:
+      "Led the development of a React app, building an efficient Express.js Node.js backend. Innovatively utilized Socket.io for real-time communication, bypassing traditional APIs. Streamlined deployment on the Render cloud platform for optimized performance.",
+    year: "y24",
+    demo: "chat-app",
+    Technical_Stack: ["React", "Express.js", "Socket.io"],
+  },
   VIRTUE: {
     name: "Virtue",
     description:
