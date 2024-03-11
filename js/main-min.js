@@ -169,7 +169,6 @@ const PROJECTS = {
     responsibilities: "",
     year: "y19",
     Technical_Stack: ["HTML", "CSS", "Jquery"],
-    demo: "Beats",
   },
   TANATOS: {
     name: "Tanatos",
@@ -179,7 +178,7 @@ const PROJECTS = {
     responsibilities: "",
     year: "y19",
     Technical_Stack: ["HTML", "CSS", "Jquery"],
-    demo: "Tanatos",
+    // demo: "Tanatos",
   },
   KAORN: {
     name: "Kaorn",
