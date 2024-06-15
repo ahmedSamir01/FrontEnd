@@ -11,7 +11,7 @@ const PROJECTS = {
     responsibilities:
       "Contributed to the front-end development of SASO's Vehicle Safety Center system, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features such as booking and managing appointments for periodic technical inspection of vehicles with all entities licensed by Saudi standards to provide the service.",
 
-    image: "img/projects/SASO.PNG",
+    image: "img/projects/SASO.png",
     year: "y24",
     Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
   },
