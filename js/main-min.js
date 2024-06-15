@@ -3,6 +3,18 @@ const YEAR_OF_BIRTH = 1997;
 const START_YEAR = 2020;
 
 const PROJECTS = {
+  VSC: {
+    name: "Vehicle Safety Center",
+    client: "SASO",
+    description:
+      "The Vehicle Safety Center is part of the Saudi Standards, Metrology and Quality Organization, and is specialized in raising technical safety standards related to vehicles. The center aims to protect lives and property, reduce injuries, and reduce economic costs resulting from traffic accidents.",
+    responsibilities:
+      "Contributed to the front-end development of SASO's Vehicle Safety Center system, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features such as booking and managing appointments for periodic technical inspection of vehicles with all entities licensed by Saudi standards to provide the service.",
+
+    image: "img/projects/SASO.PNG",
+    year: "y24",
+    Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
+  },
   CIS: {
     name: "CIS",
     description:
@@ -278,6 +290,8 @@ $(function () {
       $(".modal-body .techs").append(demoLink);
     }
 
+    $(".modal .modal-body").scrollTop(0);
+
     // Show the modal
     $("#myModal").modal("show");
   });
@@ -285,6 +299,7 @@ $(function () {
   // Close modal functionality
   $(".modal").on("hidden.bs.modal", function () {
     $("body").css("overflow", "auto");
+    $(".modal .modal-body").scrollTop(0);
   });
 
   window.matchMedia("(max-width: 767px)");
