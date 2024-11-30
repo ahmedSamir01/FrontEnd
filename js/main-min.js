@@ -3,6 +3,30 @@ const YEAR_OF_BIRTH = 1997;
 const START_YEAR = 2020;
 
 const PROJECTS = {
+  FAHIS: {
+    name: "FAHIS",
+    client: "SASO",
+    description:
+      "FAHIS is part of the Saudi Standards, Metrology and Quality Organization. The project aims at creating a central system that captures all details related to vehicle testing and audit and compliance activities. The system is a key application for the SASO for managing from first to end vehicle inspection process in Saudi Arabia",
+    responsibilities:
+      "Played a key role in front-end development for a comprehensive inspection system for SASO, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features as user registration, vehicle inspection, payments, and reporting, contributing to the streamlined efficiency of SASO's vehicle testing and audit activities.",
+
+    image: "img/projects/SASO.png",
+    year: "y24",
+    Technical_Stack: ["React", "Typescript", "MUI/Joy", "SASS", "Java"],
+  },
+  HALAL: {
+    name: "Vehicle Safety Center",
+    client: "IS EG HALAL",
+    description:
+      "Halal Market is the new authorized service provider for IS EG HALAL—the authorized entity by the Egyptian Government to certify Halal exported products into The Arab Republic of Egypt.",
+    responsibilities:
+      "Contributed to the front-end development of Halal Market system, utilizing React and Redux to create a responsive web app. Collaborated closely with the Java back-end team to integrate core features, including user registration, order management. Also contributed to building an interactive dashboard for real-time data visualization and enhanced user experience.",
+
+    image: "img/projects/Halal.png",
+    year: "y24",
+    Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
+  },
   VSC: {
     name: "Vehicle Safety Center",
     client: "SASO",
@@ -20,7 +44,7 @@ const PROJECTS = {
     description:
       "The Centralized Inspection System, A project implemented by the Roads and Transport Authority in Dubai. The project aims at creating a central system that captures all details related to vehicle testing and audit and compliance activities in Dubai. The system is a key application for the RTA for managing from first to end vehicle inspection process in Dubai.",
     responsibilities:
-      "Played a key role in front-end development for a comprehensive inspection system for RTA Dubai, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features like user registration, vehicle details, inspection results, payments, and reporting, contributing to the streamlined efficiency of RTA's vehicle testing and audit activities.",
+      "Played a key role in front-end development for a comprehensive inspection system for RTA Dubai, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features like user registration, vehicle inspection, payments, and reporting, contributing to the streamlined efficiency of RTA's vehicle testing and audit activities.",
     image: "img/projects/RTA.jpg",
     year: "y23",
     Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
