@@ -16,7 +16,7 @@ const PROJECTS = {
     Technical_Stack: ["React", "Typescript", "MUI/Joy", "SASS", "Java"],
   },
   HALAL: {
-    name: "Vehicle Safety Center",
+    name: "Halal",
     client: "IS EG HALAL",
     description:
       "Halal Market is the new authorized service provider for IS EG HALAL—the authorized entity by the Egyptian Government to certify Halal exported products into The Arab Republic of Egypt.",
@@ -57,6 +57,16 @@ const PROJECTS = {
       "Contributed to the front-end development of an electronic messaging system for RTA Dubai, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features such as user registration and messaging, enhancing communication efficiency.",
     image: "img/projects/RTA.jpg",
     year: "y23",
+    Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
+  },
+  CIS_OFFLINE: {
+    name: "CIS Offline",
+    description:
+      "The offline version of the Centralized Inspection System, a project implemented by the Roads and Transport Authority in Dubai. The project ensures system availability in case of internet disconnection by capturing all details related to vehicle testing and audit locally, with data synchronization once connectivity is restored.",
+    responsibilities:
+      "Played a key role in front-end development for the offline version of RTA Dubai’s inspection system, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement core features like user registration, vehicle inspection, payments, and reporting, ensuring system functionality during connectivity outages and contributing to the streamlined efficiency of RTA's vehicle testing and audit activities.",
+    image: "img/projects/RTA.jpg",
+    year: "y25",
     Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java"],
   },
   COMPASS: {
