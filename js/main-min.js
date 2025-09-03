@@ -1,6 +1,6 @@
 const CURRENT_YEAR = new Date().getFullYear();
 const YEAR_OF_BIRTH = 1997;
-const START_YEAR = 2020;
+const START_YEAR = 2019;
 
 const PROJECTS = {
   FAHIS: {
