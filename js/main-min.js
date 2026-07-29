@@ -3,6 +3,17 @@ const YEAR_OF_BIRTH = 1997;
 const START_YEAR = 2020;
 
 const PROJECTS = {
+  RFID: {
+    name: "RFID",
+    client: "Egyptian Ministry of Interior",
+    description:
+      "RFID is a central system for the Egyptian Ministry of Interior that manages RFID-based vehicle detection, live supervision, and compliance across gates and roads nationwide.",
+    responsibilities:
+      "Led the front-end team on a comprehensive RFID monitoring system, utilizing React and Redux to create a responsive web app. Collaborated with a Java back end to implement features such as vehicle search, real-time monitoring, and system configuration, contributing to more efficient traffic oversight and enforcement operations.",
+    image: "img/projects/RFID.jpg",
+    year: "y26",
+    Technical_Stack: ["React", "Typescript", "MUI", "SASS", "Java", "SockJS"],
+  },
   FAHIS: {
     name: "FAHIS",
     client: "SASO",
@@ -267,7 +278,7 @@ $(function () {
                             : ""
                         }
                         ${projectData.Technical_Stack.map(
-                          (tech) => `<span class="badge">${tech}</span>`
+                          (tech) => `<span class="badge">${tech}</span>`,
                         ).join("")}
                     </div>
                     </div>
@@ -314,7 +325,7 @@ $(function () {
     }
 
     var technologiesHtml = dataForCard.Technical_Stack.map(
-      (tech) => `<span class="badge mt-1">${tech}</span>`
+      (tech) => `<span class="badge mt-1">${tech}</span>`,
     );
     $(".modal-body .techs").append(technologiesHtml);
 
@@ -341,8 +352,8 @@ $(function () {
   function o() {
     if ($(window).scrollTop() > $(this).offset().top - 350) {
       let a = $(this).attr("id");
-      $(".navbar li").removeClass("active"),
-        $(`.navbar li a[data-scroll='${a}']`).parent().addClass("active");
+      ($(".navbar li").removeClass("active"),
+        $(`.navbar li a[data-scroll='${a}']`).parent().addClass("active"));
     }
   }
   function s() {
@@ -352,12 +363,12 @@ $(function () {
       : ($("nav").removeClass("sticky-nav"),
         $("nav").addClass("border-bottom"));
   }
-  $(window).on("load", function () {
+  ($(window).on("load", function () {
     $(".block").each(o);
   }),
     s(),
     $(window).scroll((s) => {
-      a.matches
+      (a.matches
         ? $(window).scrollTop() > 30
           ? ($("nav").addClass("sticky-nav"),
             $("nav").addClass("border-bottom"))
@@ -368,25 +379,25 @@ $(function () {
           $(".progress-bar").each(function () {
             this.style.width = `${this.getAttribute("aria-valuenow")}%`;
           }),
-        $(".block").each(o);
+        $(".block").each(o));
     }),
     $(window).resize((o) => {
-      s(),
+      (s(),
         a.matches &&
           $(window).scrollTop() < 30 &&
-          $("nav").removeClass("border-bottom");
+          $("nav").removeClass("border-bottom"));
     }),
     $(".shuffle li").on("click", (a) => {
       $(this).addClass("active").siblings().removeClass("active");
     }),
     $("nav li a").on("click", function (a) {
-      a.preventDefault(), $(".navbar-collapse").removeClass("show");
-      $("html, body").animate(
+      (a.preventDefault(), $(".navbar-collapse").removeClass("show"));
+      ($("html, body").animate(
         { scrollTop: $("#" + $(this).data("scroll")).offset().top - 50 },
-        1e3
+        1e3,
       ),
-        $(this).parent().addClass("active").siblings().removeClass("active");
-    });
+        $(this).parent().addClass("active").siblings().removeClass("active"));
+    }));
 });
 
 $(window).on("load", function () {
